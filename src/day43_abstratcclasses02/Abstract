@@ -1,0 +1,19 @@
+ABSTRACT CLASSES
+1) parent classdaký  methodlara abstract methodlar denýr
+bazi child parent iliskisindeký clasllarda chýld class parent classýn nazý metholdarýný kullanmak zorunda ise
+abstract hale getiri
+
+abstract classlarda obje asla vreat edýlemez
+
+2-býr methodu abstarct yapmak ýcýn --> body sýlýnýr ve rteurn typedna once abstract keyword kullanýlýr
+3- abstract býr method ancak abstract ýr classda creat edýlýr
+concrete classda asla abstract method creat edýlmez
+4-abstract býr class da hem abstract gem de cýncrete methd olabýlýr 
+5- cýncrete class abstract classa extend edýldugunde abstract classtaju tum abstract methodlarý ýmplement etmek zorundadýr ama concrete methodlarý ýmplement yapmayabýlýr
+
+6- bir abstract class baska býr classsa extend edýldýgýnde herhangý býr mrhou overrýde etmek zorunda degýl 
+cunku javaya gore abstaract chýld classýnda latýnda möutlaka concrete býr chýld lass vardýr
+/- 
+7-fýnal , private ve static methodlar abstract olamazz
+8-Abstract classta cobcrete variable olabýlýr ama bu varýable asla kesýnlýkle abstract olamaz 
+ 

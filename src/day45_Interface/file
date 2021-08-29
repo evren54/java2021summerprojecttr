@@ -1,0 +1,28 @@
+INTERFACE ASLA BIT CLASS DEGILDIR
+1) INTERFACE YAPILARDA METHOD ASLA CREAT EDILEMEZ SADECE ABSTARCT METHODLAR CREAT EDILIR
+2) java multiple inheritance desteklemez.ancak interface paretner multiple inheritanceyi destekler
+3)birden fazka parent  classlarda ayný ýsýmlý methodlarýn olasý durumunda chýld class ayný  ýsýmlý farklý bodylý methodlardan ayný ýýsýmlý farklý bodylerý ýcýn secým yapoamaz fakat ýnterfacelerde methodlarýn bodylerý olmadýgýndan ayný ýsýmlý methodlar
+býrbýrýyle ytamamaen ayný oldugu ýcýn secým tercýh soz konusu degýldýrç chýld class parent interface den ayný ýsýmlý methodlardan býrýný overrýde ederek bu sorun cozulur
+
+ahanda trick parent interfacelerde ayný ýýsmlý farklý return typleý methodlar  chýld classta CTE verir.
+4-interface yapýlarda tum methodlar abstract olmakm  zorunda oldugundan abstract keyword yazýlmayabýlýr
+
+public abstract void koltuk();//abstract method abstract key word kullanýmýs
+	public void ayna();///abstract method abstract key word kullanýmamamýs
+5- interfacedeki tum memeberlar publkic oldugu ýcýn AccessModifier access uyazýlmasada public ile ayný ozellýgýg veriri
+
+public void ayna<-- void ayna(): ----> ayný islemleri yapar
+Trýck: momrla classlarda AccMod yazýlmazsa default degerýný alýr ancak interface yapýlarda AccMod yazýlmazsa public olur
+6- interfaceler kendý arasýnda paretn chýld ýlýskýsý kurabýlýr.
+ýNTERFACELERÝ bir classa paretn yapmak ýcýn "implements" keywordu kullanýlabýlýr
+Class2lari bir class2a arent yapmak ýcýn "extends" keywordu kullanýlýr
+class--->class extends
+interface--->ýnterface extends
+interface---> class    OLAMAZ--INTERFACENIN PARENTSI CLASS OLAMAZ
+class-->interface implemements 
+7-ýnterface lerde barýable mutlaka fýnaldýr
+a- fýnal bariabler italýk boldýr ve nuyuk harf ile uazýlmalý
+b-fýnal variablar ýntýýalýze edýlmezse cte verir
+
+8- ýnterfacede variablermmutlaka statictir.dolayýsýyla obje creat etmeden class ismi ile kullanýlabýlýr.
+9-ýnterfacedlerde tum emmeberlar publictur. dolayýsýyla tum interface variablerleri  ----> public+static+final 
